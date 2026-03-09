@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xcost"
+version = "0.1.0"
+description = "Broker algo wheel, pre-trade cost model and the research handoff: how much of an ML equity signal survives realistic execution costs"
+requires-python = ">=3.10"
+dependencies = ["numpy", "pandas", "pyarrow", "scipy", "scikit-learn", "cvxpy", "clarabel", "matplotlib", "fpdf2"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools]
+packages = ["xcost"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
