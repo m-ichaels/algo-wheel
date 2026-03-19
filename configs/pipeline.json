@@ -1,0 +1,11 @@
+{
+  "signal": {"first_year": 2010, "last_year": 2026, "ic_shrink": 0.5},
+  "calibration": {"start": "2010-01-01", "end": "2016-12-31", "pretrade_train_end": "2014-12-31"},
+  "handoff": {"start": "2017-01-01", "end": "2026-09-17"},
+  "optimizer": {"capital": 1e9, "risk_aversion": 20.0, "w_max": 0.02, "gross": 2.0, "max_pct_adv": 0.10},
+  "gamma_grid": [0.25, 0.5, 1.0, 2.0],
+  "naive_linear_bp": 10.0,
+  "naive_grid": [3.0, 10.0, 30.0],
+  "bootstrap": 1000,
+  "seed": 7
+}

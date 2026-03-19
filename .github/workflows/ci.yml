@@ -1,0 +1,19 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install numpy pandas pyarrow scipy scikit-learn cvxpy clarabel matplotlib fpdf2 pytest
+      - name: unit tests (market, optimiser, wheel, pre-trade) and one short pass on the committed data
+        run: python -m pytest -q
+      - name: quick pipeline (signal, calibration on 2015-16, handoff on 2024-26) and the summary
+        run: |
+          python -m xcost signal
+          python -m xcost calibrate --quick
+          python -m xcost handoff --quick
+          python scripts/summarize.py
