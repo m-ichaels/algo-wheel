@@ -1,0 +1,236 @@
+{
+ "gross": {
+  "years": 6.97,
+  "real": {
+   "ann_return_bp": -18.659256790597617,
+   "ann_vol_bp": 489.2736590613281,
+   "sharpe": -0.03813664693577704,
+   "total_pnl_usd": -13819565.210518718,
+   "max_drawdown_usd": 154916046.76750553
+  },
+  "paper": {
+   "ann_return_bp": 742.031109389786,
+   "ann_vol_bp": 470.2362807814935,
+   "sharpe": 1.5779962961526321,
+   "total_pnl_usd": 514925744.0330453,
+   "max_drawdown_usd": 61106641.75019503
+  },
+  "orders": {
+   "n": 52374,
+   "traded_usd": 546454216949.12006,
+   "traded_per_year_usd": 78425305595.5466,
+   "is_bp": 9.675930624079877,
+   "delay_bp": 1.2613235223877146,
+   "exec_bp": 8.11450429321052,
+   "fees_bp": 0.3001028084816462,
+   "true_cost_bp": 7.662999266134944,
+   "spread_paid_bp": 1.2027420863852754,
+   "is_usd_per_year": 75883781.61147724,
+   "is_bp_of_capital_per_year": 758.8378161147724,
+   "median_pct_adv": 0.031954281890896025,
+   "p90_pct_adv": 0.10013514268761435,
+   "auction_share": 0.11898390916898866
+  },
+  "identity_gap_usd": 5.9604644775390625e-06,
+  "turnover_per_week": 1.5012485236488489,
+  "gross": 1.962430909126198,
+  "solver_failures": 0,
+  "alpha_survival": -0.025146192059174143,
+  "seconds": 56.8
+ },
+ "naive10bp": {
+  "years": 6.97,
+  "real": {
+   "ann_return_bp": 346.28446439389387,
+   "ann_vol_bp": 436.4531195725373,
+   "sharpe": 0.7934058639174014,
+   "total_pnl_usd": 240770251.64766002,
+   "max_drawdown_usd": 75098545.11833334
+  },
+  "paper": {
+   "ann_return_bp": 456.39335148771346,
+   "ann_vol_bp": 433.0080547802438,
+   "sharpe": 1.0540066089979274,
+   "total_pnl_usd": 317189710.91221094,
+   "max_drawdown_usd": 72089997.14345908
+  },
+  "orders": {
+   "n": 11271,
+   "traded_usd": 53064129665.165924,
+   "traded_per_year_usd": 7615588746.6412,
+   "is_bp": 14.40134036810692,
+   "delay_bp": 4.975852730064221,
+   "exec_bp": 9.125051936798231,
+   "fees_bp": 0.3004357012444673,
+   "true_cost_bp": 10.900197340474076,
+   "spread_paid_bp": 1.2061774492125936,
+   "is_usd_per_year": 10967468.56439047,
+   "is_bp_of_capital_per_year": 109.6746856439047,
+   "median_pct_adv": 0.0031576686511004476,
+   "p90_pct_adv": 0.08504109336573959,
+   "auction_share": 0.08501976472465952
+  },
+  "identity_gap_usd": 9.521842002868652e-06,
+  "turnover_per_week": 0.14578101326425016,
+  "gross": 1.8278980643485592,
+  "solver_failures": 0,
+  "alpha_survival": 0.7587412552463885,
+  "seconds": 54.6
+ },
+ "cost_g0.25": {
+  "years": 6.97,
+  "real": {
+   "ann_return_bp": 233.47366130365472,
+   "ann_vol_bp": 471.5362692937623,
+   "sharpe": 0.4951340469596052,
+   "total_pnl_usd": 161339984.63136363,
+   "max_drawdown_usd": 93700719.27667856
+  },
+  "paper": {
+   "ann_return_bp": 635.4761577178203,
+   "ann_vol_bp": 463.3957830824608,
+   "sharpe": 1.3713464405970608,
+   "total_pnl_usd": 440855735.21368647,
+   "max_drawdown_usd": 76433988.29630518
+  },
+  "orders": {
+   "n": 49945,
+   "traded_usd": 300995886895.466,
+   "traded_per_year_usd": 43197936223.40627,
+   "is_bp": 9.28636445717936,
+   "delay_bp": 1.8755055660366258,
+   "exec_bp": 7.1107219536371815,
+   "fees_bp": 0.3001369375055532,
+   "true_cost_bp": 6.6773764204569215,
+   "spread_paid_bp": 1.1859563047947326,
+   "is_usd_per_year": 40115177.95685408,
+   "is_bp_of_capital_per_year": 401.15177956854086,
+   "median_pct_adv": 0.01033679860858494,
+   "p90_pct_adv": 0.07656440895602597,
+   "auction_share": 0.06420379362835864
+  },
+  "identity_gap_usd": -5.960464477539062e-07,
+  "turnover_per_week": 0.8269196658504111,
+  "gross": 1.913924923366992,
+  "solver_failures": 0,
+  "alpha_survival": 0.3673995608932466,
+  "seconds": 59.1
+ },
+ "cost_g0.5": {
+  "years": 6.97,
+  "real": {
+   "ann_return_bp": 312.17464632163654,
+   "ann_vol_bp": 465.8236499628607,
+   "sharpe": 0.6701562841356934,
+   "total_pnl_usd": 216994507.93212938,
+   "max_drawdown_usd": 90642776.39458275
+  },
+  "paper": {
+   "ann_return_bp": 551.0679164627022,
+   "ann_vol_bp": 460.74810745597773,
+   "sharpe": 1.1960286055333482,
+   "total_pnl_usd": 382417317.91338444,
+   "max_drawdown_usd": 81545260.1663773
+  },
+  "orders": {
+   "n": 47353,
+   "traded_usd": 184713888523.194,
+   "traded_per_year_usd": 26509527616.14798,
+   "is_bp": 8.95562381929188,
+   "delay_bp": 2.4800692861819638,
+   "exec_bp": 6.175401901210718,
+   "fees_bp": 0.3001526318991969,
+   "true_cost_bp": 6.080673147626107,
+   "spread_paid_bp": 1.1702432958226394,
+   "is_usd_per_year": 23740935.695735075,
+   "is_bp_of_capital_per_year": 237.40935695735075,
+   "median_pct_adv": 0.005566386814898591,
+   "p90_pct_adv": 0.0416945779414555,
+   "auction_share": 0.035071743665716464
+  },
+  "identity_gap_usd": 2.092123031616211e-05,
+  "turnover_per_week": 0.5074673939081408,
+  "gross": 1.852947287285032,
+  "solver_failures": 0,
+  "alpha_survival": 0.566490330857005,
+  "seconds": 58.9
+ },
+ "cost_g1.0": {
+  "years": 6.97,
+  "real": {
+   "ann_return_bp": 334.3345791494441,
+   "ann_vol_bp": 451.4661859929299,
+   "sharpe": 0.7405528686808007,
+   "total_pnl_usd": 232594963.43267488,
+   "max_drawdown_usd": 73690106.99901295
+  },
+  "paper": {
+   "ann_return_bp": 458.34522752704896,
+   "ann_vol_bp": 449.288784844955,
+   "sharpe": 1.020157286332485,
+   "total_pnl_usd": 318356811.2120185,
+   "max_drawdown_usd": 70851069.09751558
+  },
+  "orders": {
+   "n": 42407,
+   "traded_usd": 90884328455.09656,
+   "traded_per_year_usd": 13043418848.025154,
+   "is_bp": 9.43637360116566,
+   "delay_bp": 3.0782822243836447,
+   "exec_bp": 6.057878295660464,
+   "fees_bp": 0.3002130811215483,
+   "true_cost_bp": 5.25861460995863,
+   "spread_paid_bp": 1.1361573724873755,
+   "is_usd_per_year": 12308257.328645114,
+   "is_bp_of_capital_per_year": 123.08257328645114,
+   "median_pct_adv": 0.002764321327111547,
+   "p90_pct_adv": 0.019213302012993663,
+   "auction_share": 0.016635328169501532
+  },
+  "identity_gap_usd": 9.402632713317871e-06,
+  "turnover_per_week": 0.2496987930573002,
+  "gross": 1.711844529816389,
+  "solver_failures": 0,
+  "alpha_survival": 0.7294383339678464,
+  "seconds": 58.5
+ },
+ "cost_g2.0": {
+  "years": 6.97,
+  "real": {
+   "ann_return_bp": 267.41451816886376,
+   "ann_vol_bp": 410.6480516483126,
+   "sharpe": 0.6512012344767754,
+   "total_pnl_usd": 185693233.6659975,
+   "max_drawdown_usd": 99363063.2239685
+  },
+  "paper": {
+   "ann_return_bp": 299.48050762893786,
+   "ann_vol_bp": 409.53953074520535,
+   "sharpe": 0.7312615392316288,
+   "total_pnl_usd": 208012843.2071576,
+   "max_drawdown_usd": 100204451.77519298
+  },
+  "orders": {
+   "n": 34440,
+   "traded_usd": 36448316395.898865,
+   "traded_per_year_usd": 5230942068.21299,
+   "is_bp": 6.1236325153488576,
+   "delay_bp": 3.387906958013006,
+   "exec_bp": 2.4353824164495106,
+   "fees_bp": 0.30034314088634256,
+   "true_cost_bp": 4.17701489567881,
+   "spread_paid_bp": 1.0885792582023186,
+   "is_usd_per_year": 3203236.6934815277,
+   "is_bp_of_capital_per_year": 32.03236693481528,
+   "median_pct_adv": 0.0012290211076380437,
+   "p90_pct_adv": 0.008208750174478072,
+   "auction_share": 0.009250598571629685
+  },
+  "identity_gap_usd": -4.816800355911255e-06,
+  "turnover_per_week": 0.10015398501661898,
+  "gross": 1.4913089189761284,
+  "solver_failures": 0,
+  "alpha_survival": 0.8929279581033552,
+  "seconds": 57.7
+ }
+}
