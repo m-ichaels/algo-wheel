@@ -56,7 +56,10 @@ def optimise(alpha: np.ndarray, sigma: np.ndarray, w0: np.ndarray, sigma_bp: np.
         else:
             lin = 1e-4 * np.maximum(model.a + model.c * spread_bp, 0.0)
             k = 1e-4 * max(model.b, 0.0) * sigma_bp * np.power(cfg.capital / np.maximum(adv_usd, 1.0), model.beta)
-            obj -= cfg.gamma * (lin @ cp.abs(d) + k @ cp.power(cp.abs(d), 1.0 + model.beta))
+            ex = 1.0 + model.beta
+            # a fitted beta at its upper bound gives an exponent a hair above 2, which newer cvxpy refuses inside a quadratic objective
+            pw = cp.square(d) if abs(ex - 2.0) < 1e-6 or ex > 2.0 else cp.power(cp.abs(d), ex)
+            obj -= cfg.gamma * (lin @ cp.abs(d) + k @ pw)
     cap = cfg.max_pct_adv * adv_usd / cfg.capital
     cap = np.where(alpha == 0.0, np.maximum(cap, np.abs(w0)), cap)     # a name that has left the universe may always be closed
     cons = [cp.sum(w) == 0, cp.abs(w) <= cfg.w_max, cp.sum(cp.abs(w)) <= cfg.gross, cp.abs(d) <= cap]
